@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.ilogo {
+    border-radius: 50%;
+}
+
+
+
+.portada {
+    background-color: #f1c36b;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background-color: white;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE4xvW6z2GPRmObFyFkiYZNaVKnP-k3bgJiA&usqp=CAU);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.titulo-destac{
+    color:#a32f75;
+    text-align: center;
+
+}
+
+.atajos {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 60px;
+    align-items: center;
+}
+
+.logo {
+    flex: 1 1 auto;
+    border-radius: 50%;
+}
+
+.boton-menu {
+    display: none;
+    background: none;
+    color: #71b6b0;
+    font-size: 40px;
+    cursor: pointer;
+    border-style: none;
+}
+
+.nav {
+    flex: 5 1 auto;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: end;
+}
+
+.nav-menu-item{
+    list-style: none;
+    padding: 5px;
+}
+
+.nav-link{
+    background-color: #676b6a;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portada{
+    background-image: url(https://scontent.fcor10-3.fna.fbcdn.net/v/t1.6435-9/118153126_101059995058228_3284255412866192029_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=MmbxnvnY4pQAX_j48Ds&_nc_ht=scontent.fcor10-3.fna&oh=00_AT-5wEDCwBlXDgXgN8iHTFpbfJFZC1S6Ao4jJUnozzaeuQ&oe=63255EF7);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff0e6;
+
+    width: 100%;
+    height: 720px;
+}
+
+.section {
+    display: flex;
+    padding: 0 30px;
+    max-width: 1400px;
+}
+
+.pd{
+    background-color: #e4bcd4;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #133435;
+}
+
+.productos-destac { 
+    justify-content: center;
+    font-size: 15px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.article {
+    background-color: #f7f7f7;
+    flex: 3;
+    max-width: 400px;
+    max-height: 600px;
+    margin: 50px 50px;
+    border-bottom: 4px solid #c6e1f1;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.name-produc {
+    width: 200px;
+    padding: 5px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.precio {
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    padding: 5px 5px;
+}
+
+.producto-links {
+    text-align: right;
+}
+
+.producto-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.producto-links a:hover {
+    color: red;
+}
+
+.mas-detalles {
+    background-color: #e4bcd4;
+    padding: 5px;
+    border-radius: 10px;
+
+    margin: 10px 0;
+    box-shadow: 0 2px 7px #133435;
+}
+
+a { 
+    color: #fafcfb;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ver-mas-produc {
+    flex: 1 1 100%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 7px #133435;
+}
+
+.ver-mas {
+    background-color: #e4bcd4;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #133435;
+}
+
+.productos-variad {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow:  row wrap;
+    width: 1283px;
+    padding: 20px 70px;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #001810;
+    height: 200px;
+
+}
+
+.pie {
+    background-color: 002214;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .boton-menu{
+        display: block;
+        flex: 1 1 auto;
+
+        display: flex;
+        margin: 0 10px;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, blue, 0.2);
+    margin:  0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
